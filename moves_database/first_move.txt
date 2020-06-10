@@ -7,3 +7,6 @@
 7 5 w
 8 5 w
 9 5 w
+
+- first column = user move
+- second col = response
