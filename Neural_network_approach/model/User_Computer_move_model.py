@@ -50,11 +50,11 @@ loaded_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['acc
 _, accuracy = loaded_model.evaluate(X, y)
 print('Accuracy: %.2f' % (accuracy*100))
 
-# running for a single input
+# running for a single input (test)
 Xnew = np.array([[1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0]])
 ynew = model.predict(Xnew)
 ynew = list(map(lambda num: int(round(num)), ynew[0]))
 
-# 0	 0	0	0	1	0	0	0	0
+# Correct Answer: 0 0 0 0 1 0 0 0 0
 # show the inputs and predicted outputs
-print("X={}\nPredicted={}".format(Xnew, ynew))
+print("\nX={}\nPredicted={}".format(Xnew, ynew))
