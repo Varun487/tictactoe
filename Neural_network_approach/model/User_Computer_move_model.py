@@ -3,12 +3,14 @@ import pandas as pd
 import numpy as np
 
 # Loading the training data
-X = pd.read_csv('moves_data/Training_set_User_Computer_Move_encoding.csv')
+X = pd.read_csv('../moves_data/Training_set_User_Computer_Move_encoding.csv')
+
+# X = pd.read_csv('moves_data/Training_set_User_Computer_Move_encoding.csv')
 X = X.loc[:, 'User_Move_1_encoding_1':'User_Move_4_encoding_9']
 # print(X.loc[:, 'User_Move_1_encoding_1':'User_Move_4_encoding_9'])
 
 # Loading training data
-y = pd.read_csv('moves_data/Training_set_User_Computer_Move_encoding.csv')
+y = pd.read_csv('../moves_data/Training_set_User_Computer_Move_encoding.csv')
 y = y.loc[:, 'Computer_Response_encoding_1':'Computer_Response_encoding_9']
 # print(y.loc[:, 'Computer_Response_encoding_1':'Computer_Response_encoding_9'])
 

@@ -14,10 +14,6 @@ print("Loaded model from disk")
 
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-# Correct Answer: 0 0 0 0 1 0 0 0 0
-# show the inputs and predicted outputs
-# print("\nX={}\nPredicted={}".format(Xnew, ynew))
-
 # keeping track of user and computer's moves
 user_moves = []
 computer_moves = []
